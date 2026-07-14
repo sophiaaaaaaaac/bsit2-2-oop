@@ -1,6 +1,6 @@
 import java.util.*;
 
- class Main {
+ Public class GradeTracker {
 
     static double[] cutoffs = {90, 80, 70, 60};
     static char[] letters = {'A', 'B', 'C', 'D'};
