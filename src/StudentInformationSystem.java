@@ -17,7 +17,7 @@ public class StudentInformationSystem {
 
         do {
 
-            System.out.println("\n===== STUDENT RECORD SYSTEM =====");
+            System.out.println("\n===== STUDENT INFORMATION SYSTEM =====");
             System.out.println("1. Add Student");
             System.out.println("2. View All Students");
             System.out.println("3. Search Student by ID");
@@ -82,7 +82,7 @@ public class StudentInformationSystem {
                         System.out.println("No students found.");
                     } else {
 
-                        System.out.println("\n================ STUDENT INFORMATION SYSTEM ================");
+                        System.out.println("\n--- STUDENT RECORDS ---");
 
                         System.out.printf("%-8s %-20s %-5s %-15s %-8s %-10s %-15s\n",
                                 "ID", "Name", "Age", "Course", "Grade", "Status", "Standing");
@@ -168,7 +168,7 @@ public class StudentInformationSystem {
 
                         double average = total / studentCount;
 
-                        System.out.println("\n===== CLASS STATISTICS =====");
+                        System.out.println("\n---STATISTICS ---");
                         System.out.println("Total Students : " + studentCount);
                         System.out.printf("Average Grade : %.2f\n", average);
                         System.out.println("Top Student   : " + topStudent);
