@@ -1,29 +1,28 @@
-public class Student {
-    private String studentId;
-    private String fullName;
-    private String program;
-    private int yearLevel;
+public class Student extends User {
 
-    public Student(String studentId, String fullName, String program, int yearLevel) {
+    private String course;
 
-        if (studentId == null || studentId.trim().isEmpty()) {
-            throw new IllegalArgumentException("Student ID cannot be empty.");
-        }
-        if (yearLevel < 1 || yearLevel > 4) {
-            throw new IllegalArgumentException("Year level must be between 1 and 4.");
-        }
-        this.studentId = studentId;
-        this.fullName = fullName;
-        this.program = program;
-        this.yearLevel = yearLevel;
+    public Student(int id, String name, String email, String course) {
+        super(id, name, email);
+        this.course = course;
     }
 
-    public String getStudentId() { return studentId; }
-    public String getFullName() { return fullName; }
-    public String getProgram() { return program; }
-    public int getYearLevel() { return yearLevel; }
+    public String getCourse() {
+        return course;
+    }
 
-    public String describe() {
-        return studentId + " | " + fullName + " | " + program + " | Year " + yearLevel;
+    @Override
+    public String role() {
+        return "STUDENT";
+    }
+
+    @Override
+    public String permissions() {
+        return "read only";
+    }
+
+    @Override
+    public String toCsv() {
+        return super.toCsv() + "," + course;
     }
 }
