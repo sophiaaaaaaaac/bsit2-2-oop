@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="14" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ph.edu.liceo.portal.controller.LoginController">
+    <padding>
+        <Insets bottom="35" left="40" right="40" top="35" />
+    </padding>
+
+    <!-- Header Section -->
+    <VBox alignment="CENTER" spacing="2">
+        <Label styleClass="sub-header" text="LICEO DE CAGAYAN UNIVERSITY" />
+        <Label styleClass="main-header" text="Student Portal" />
+    </VBox>
+
+    <!-- Light Divider Line -->
+    <Separator maxWidth="280">
+        <VBox.margin>
+            <Insets bottom="5" top="5" />
+        </VBox.margin>
+    </Separator>
+
+    <!-- Student Number Field -->
+    <VBox alignment="CENTER" spacing="5">
+        <Label styleClass="field-label" text="Student Number" />
+        <TextField fx:id="studentNoField" promptText="2026-00123" styleClass="text-field" />
+    </VBox>
+
+    <!-- Password Field -->
+    <VBox alignment="CENTER" spacing="5">
+        <Label styleClass="field-label" text="Password" />
+        <PasswordField fx:id="passwordField" promptText="Enter your password" styleClass="password-field" />
+    </VBox>
+
+    <!-- Submit Button -->
+    <Button maxWidth="Infinity" onAction="#handleLogin" styleClass="primary-button" text="LOG IN">
+        <VBox.margin>
+            <Insets top="5" />
+        </VBox.margin>
+    </Button>
+
+    <Label fx:id="messageLabel" styleClass="error-label" text="" wrapText="true" />
+</VBox>

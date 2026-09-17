@@ -1,0 +1,88 @@
+.root {
+    -fx-background-color: #fcfbf9;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.sub-header {
+    -fx-text-fill: #b38b4d;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.main-header {
+    -fx-text-fill: #7a1c1c;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+}
+
+.field-label {
+    -fx-text-fill: #444444;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+.text-field, .password-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 4px;
+    -fx-padding: 8px 12px;
+    -fx-font-size: 13px;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #0088cc;
+}
+
+.primary-button {
+    -fx-background-color: #7a1c1c;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: #5c1414;
+}
+
+.error-label {
+    -fx-text-fill: #7a1c1c;
+    -fx-font-size: 12px;
+    -fx-alignment: center;
+}
+
+.profile-header {
+    -fx-background-color: #7a1c1c;
+}
+
+.sub-header-gold {
+    -fx-text-fill: #d4af37;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.avatar-circle {
+    -fx-background-color: #d4af37;
+    -fx-text-fill: #5c4000;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-min-width: 60px;
+    -fx-min-height: 60px;
+    -fx-max-width: 60px;
+    -fx-max-height: 60px;
+    -fx-background-radius: 30px;
+    -fx-alignment: center;
+}
+
+.name-title {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.value-label {
+    -fx-text-fill: #333333;
+    -fx-font-size: 13px;
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ph.edu.liceo.portal.controller.ProfileController">
+    <top>
+        <VBox alignment="CENTER" spacing="10" styleClass="profile-header">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+            <Label styleClass="sub-header-gold" text="STUDENT PROFILE" />
+            <Label fx:id="initialsLabel" styleClass="avatar-circle" text="AC" />
+            <Label fx:id="nameLabel" styleClass="name-title" text="Student Name" />
+        </VBox>
+    </top>
+
+    <center>
+        <GridPane hgap="10" vgap="12">
+            <padding>
+                <Insets bottom="20" left="30" right="30" top="25" />
+            </padding>
+            <Label styleClass="field-label" text="Student No.:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Label fx:id="studentNoLabel" styleClass="value-label" text="" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label styleClass="field-label" text="Course:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Label fx:id="courseLabel" styleClass="value-label" text="" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label styleClass="field-label" text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Label fx:id="emailLabel" styleClass="value-label" text="" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        </GridPane>
+    </center>
+
+    <bottom>
+        <VBox alignment="CENTER">
+            <padding>
+                <Insets bottom="20" left="30" right="30" top="10" />
+            </padding>
+            <Button maxWidth="Infinity" onAction="#handleLogout" styleClass="primary-button" text="LOG OUT" />
+        </VBox>
+    </bottom>
+</BorderPane>
